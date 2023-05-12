@@ -1,15 +1,15 @@
- # Local .terraform directories
- **/.terraform/*
+# Local .terraform directories
+**/.terraform/*
 
- # .tfstate files
- *.tfstate
- *.tfstate.*
+# .tfstate files
+*.tfstate
+*.tfstate.*
 
- # Crash log files
- crash.log
+# Crash log files
+crash.log
 
- terraform.tfvars
- *.terraform.lock.hcl
+terraform.tfvars
+*.terraform.lock.hcl
 
- # backend terraform file
- backend.tf
+# backend terraform file
+backend.tf
