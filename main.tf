@@ -31,7 +31,7 @@ resource "tfe_variable_set" "oidc_arn" {
   organization = var.tfc_org_name
 }
 
-resource "tfe_variable" "test-a" {
+resource "tfe_variable" "oidc_arn_content" {
   key             = var.oidc_arn_variable
   value           = aws_iam_openid_connect_provider.tfc_provider.arn
   category        = "terraform"
