@@ -29,6 +29,7 @@ resource "tfe_variable_set" "oidc_arn" {
   description  = "Variable set applied to all workspaces."
   global       = true
   organization = var.tfc_org_name
+  depends_on = [ aws_iam_openid_connect_provider.tfc_provider ]
 }
 
 resource "tfe_variable" "oidc_arn_content" {
@@ -37,4 +38,5 @@ resource "tfe_variable" "oidc_arn_content" {
   category        = "terraform"
   description     = "The arn resource name for oidc Identity Provider created"
   variable_set_id = tfe_variable_set.oidc_arn.id
+  depends_on = [ aws_iam_openid_connect_provider.tfc_provider ]
 }
