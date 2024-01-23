@@ -15,6 +15,7 @@ Those are the variable that you must need to configure: aws_region, tfc_org_name
 ### CLI-drive workflow
 Create a backend.tf file in case you would like to follow CLI-driven workflow
 
+```
 terraform {
   cloud {
     organization = ""
@@ -24,3 +25,4 @@ terraform {
     }
   }
 }
+```
